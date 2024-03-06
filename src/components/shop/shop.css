@@ -1,0 +1,99 @@
+.middle-text {
+  text-align: center;
+}
+
+.middle-text h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--color-main);
+}
+
+.middle-text h2 {
+  font-size: var(--font-med);
+}
+
+.shop-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 2rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.row {
+  position: relative;
+  padding: 10px 35px 40px;
+  background: var(--color-other);
+  border-radius: 3rem;
+}
+
+.row img {
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.row h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.row p {
+  color: var(--color-second);
+  font-size: var(--font-small);
+  line-height: 30px;
+  margin-bottom: 1.1rem;
+}
+
+.in-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.in-text .price h6 {
+  font-size: 17px;
+  color: var(--color-main);
+  font-weight: 600;
+}
+
+.in-text .s-btn a {
+  display: inline-block;
+  padding: 9px 23px;
+  background-color: var(--color-bg);
+  color: var(--color-main);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 3rem;
+  transition: all 0.5s ease;
+}
+
+.in-text .s-btn a:hover {
+  background: var(--color-main);
+  color: var(--color-bg);
+  box-shadow: #ff9f0d 0px 1px 25px;
+}
+
+.top-icon {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+}
+
+.top-icon i {
+  font-size: 22px;
+  color: var(--color-main);
+}
+
+.row-btn {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.row img:hover {
+  transform: scale(1.1);
+}
