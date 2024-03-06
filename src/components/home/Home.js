@@ -4,7 +4,6 @@ import ScrollReveal from "scrollreveal";
 import About from "../about/About";
 import Details from "../details/Details";
 import Header from "../header/Header";
-import Navbar from "../navbar/Navbar";
 import Scroll from "../scroll/Scroll";
 import Shop from "../shop/Shop";
 
@@ -18,7 +17,6 @@ const sr = ScrollReveal({
 function Home() {
   return (
     <>
-      <Navbar />
       <Header sr={sr} />
       <Details sr={sr} />
       <About sr={sr} />

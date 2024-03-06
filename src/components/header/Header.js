@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import hero from "../../images/hero.png";
 import "./header.css";
 
@@ -18,9 +19,9 @@ function Header({ sr }) {
         <a href="#" className="btn">
           Explore Menu<i className="bx bxs-right-arrow"></i>
         </a>
-        <a href="#" className="btn2">
-          Order Now
-        </a>
+        <Link to='/book-a-table' className="btn2">
+          Book a Table
+        </Link>
       </div>
 
       <div className="home-img">

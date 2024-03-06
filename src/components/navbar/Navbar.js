@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useEffect, useState } from "react";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [stickyClass, setStickyClass] = useState("");
@@ -23,17 +24,17 @@ function Navbar() {
     setNavBarOpen((prev) => !prev);
 
     window.onscroll = () => {
-      e.target.classList.remove('bx-x');
+      e.target.classList.remove("bx-x");
       setNavBarOpen(false);
     };
   }
 
   return (
     <header className={stickyClass}>
-      <a href="#" className="logo">
+      <Link to='/' className="logo">
         <i className="bx bxs-home"></i>
         <h3>&nbsp;Restaurant</h3>
-      </a>
+      </Link>
 
       <ul className={`navlist ${navBarOpen ? "open" : ""}`}>
         <li>

@@ -1,0 +1,232 @@
+.form-container {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 20% 20% 1fr 20%;
+  align-items: center;
+}
+
+.form-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background: var(--color-other);
+  padding: 10px 35px 40px;
+  border-radius: 3rem;
+}
+
+.left-container {
+  grid-column-start: 1;
+  text-align: center;
+  padding-top: 11rem;
+}
+
+.right-container {
+  grid-column-start: 2;
+  padding: 72px 70px 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-container h2 {
+  font-size: var(--font-med);
+}
+
+@media (max-width: 475px) {
+  .form-container {
+    display: block;
+    position: relative;
+    margin-top: 10rem;
+    padding: 10px 35px 40px;
+    border-radius: 3rem;
+  }
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .left-container {
+    padding-top: 4rem;
+  }
+  input {
+    width: 12rem;
+  }
+}
+
+/*
+.form-radio {
+  margin-bottom: 65px;
+  padding-top: 20px;
+}
+
+.form-radio input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -9999px;
+}
+
+.form-radio label {
+  padding-top: 4px;
+}
+
+.form-radio input + label {
+  margin: 0 3px;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border: solid 2px #ebebeb;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  color: #888;
+  text-align: center;
+  transition: border-color 0.15s ease-out, color 0.25s ease-out,
+    background-color 0.15s ease-out, box-shadow 0.15s ease-out;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+}
+
+.form-radio input:checked + label {
+  background-color: #111;
+  color: #fff;
+  border-color: #111;
+  z-index: 1;
+}
+
+.form-radio input:focus + label {
+  outline: none;
+}
+
+.form-radio input:hover {
+  background-color: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.radio-item-list {
+  margin: 0 -3px;
+}
+
+.active {
+  position: relative;
+  background: #edb77d;
+  padding: 14px 1px;
+  margin-right: 7px;
+  margin-left: 3px;
+  border-radius: 24px;
+  -moz-border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -o-border-radius: 24px;
+  -ms-border-radius: 24px;
+}
+
+.active:after {
+  position: absolute;
+  content: "Person";
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  font-size: 11px;
+  color: #222;
+  font-weight: 700;
+}
+
+.active input + label {
+  margin-right: 59px;
+}
+*/
+
+form {
+  padding: 72px 70px 70px;
+}
+
+/*
+.form-group {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.form-input {
+  padding-top: 21px;
+}
+
+.form-label {
+  position: absolute;
+  transition: 0.25s ease;
+  -moz-transition: 0.25s ease;
+  -webkit-transition: 0.25s ease;
+  -o-transition: 0.25s ease;
+  -ms-transition: 0.25s ease;
+  color: #bebebe;
+  left: 0;
+  top: 23px;
+}
+
+input {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  padding-top: 10px;
+}
+
+input:focus + .form-label,
+input:valid + .form-label {
+  top: 1px;
+  font-size: 11px;
+  color: #edb77d;
+}
+
+input,
+select {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  border: none;
+  font-family: Poppins;
+  color: #fff;
+  background: 0 0;
+  border-bottom: 1px solid #999;
+  padding: 4px 0;
+}
+
+input:focus,
+select:focus {
+  border-bottom: 1px solid #edb77d;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px transparent inset;
+}
+
+input::-webkit-input-placeholder {
+  color: #bebebe;
+}
+
+input::-moz-placeholder {
+  color: #bebebe;
+}
+
+input:-ms-input-placeholder {
+  color: #bebebe;
+}
+
+input:-moz-placeholder {
+  color: #bebebe;
+}
+*/
