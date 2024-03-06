@@ -4,6 +4,7 @@ import "./navbar.css";
 
 function Navbar() {
   const [stickyClass, setStickyClass] = useState("");
+  const [navBarOpen, setNavBarOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", stickNavbar);
@@ -17,6 +18,16 @@ function Navbar() {
     }
   };
 
+  function handleClick(e) {
+    e.target.classList.toggle("bx-x");
+    setNavBarOpen((prev) => !prev);
+
+    window.onscroll = () => {
+      e.target.classList.remove('bx-x');
+      setNavBarOpen(false);
+    };
+  }
+
   return (
     <header className={stickyClass}>
       <a href="#" className="logo">
@@ -24,7 +35,7 @@ function Navbar() {
         <h3>&nbsp;Restaurant</h3>
       </a>
 
-      <ul className="navlist">
+      <ul className={`navlist ${navBarOpen ? "open" : ""}`}>
         <li>
           <a href="#home" className="active">
             Home
@@ -47,7 +58,7 @@ function Navbar() {
       <div className="nav-icons">
         <i className="bx bx-search"></i>
         <i className="bx bx-cart"></i>
-        <div id="menu-icon">
+        <div id="menu-icon" onClick={handleClick}>
           <i className="bx bx-menu"></i>
         </div>
       </div>

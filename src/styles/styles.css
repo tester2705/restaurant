@@ -99,12 +99,37 @@ header.sticky {
 }
 
 @media (max-width: 1545px) {
-  header {
-    padding: 22px 4%;
+  header.sticky {
+    padding: 14px 4%;
+  }
+
+  section {
+    padding: 50px 4% 40px;
     transition: 0.2s;
   }
 
-  header.sticky {
-    padding: 14px 4%;
+  .container {
+    padding: 30px 4% 50px;
+  }
+}
+
+@media (max-width: 1180px) {
+  :root {
+    --font-big: 4rem;
+    --font-med: 2.2rem;
+    --font-small: 15px;
+  }
+}
+
+@media (max-width: 1045px) {
+  :root {
+    --font-big: 3.3rem;
+    --font-med: 2rem;
+  }
+}
+
+@media (max-width: 475px) {
+  :root {
+    --font-big: 2.8rem;
   }
 }

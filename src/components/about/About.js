@@ -1,8 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { useEffect } from "react";
 import about from "../../images/about.png";
 import "./about.css";
 
-function About() {
+function About({ sr }) {
+  useEffect(() => {
+    sr.reveal(".about-img", {});
+    sr.reveal('.about-text', {delay: 300});
+  }, [sr]);
+
   return (
     <section className="about" id="about">
       <div className="about-img">
@@ -21,7 +27,9 @@ function About() {
           feugiat. Curabitur rhoncus consequat dignissim. Donec dictum, est vel
           blandit.
         </p>
-        <a href="#" className="btn">Explore Story<i className='bx bxs-right-arrow'></i></a>
+        <a href="#" className="btn">
+          Explore Story<i className="bx bxs-right-arrow"></i>
+        </a>
       </div>
     </section>
   );

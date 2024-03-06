@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { useEffect } from "react";
 import img1 from "../../images/p1.png";
 import img2 from "../../images/p2.png";
 import img3 from "../../images/p3.png";
@@ -6,7 +7,12 @@ import img4 from "../../images/p4.png";
 import ProductCard from "./ProductCard.js";
 import "./shop.css";
 
-function Shop() {
+function Shop({ sr }) {
+  useEffect(() => {
+    sr.reveal(".middle-text", {});
+    sr.reveal(".row-btn,.shop-content", { delay: 300 });
+  }, [sr]);
+
   return (
     <section className="shop" id="shop">
       <div className="middle-text">

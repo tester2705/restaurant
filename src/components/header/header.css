@@ -36,5 +36,45 @@ span {
 }
 
 .btn2:hover {
-    transform: scale(1.1) translateX(12px);
+  transform: scale(1.1) translateX(12px);
+}
+
+@media (max-width: 1180px) {
+  .home {
+    height: 85vh;
+  }
+}
+
+@media (max-width: 1045px) {
+  .home-img {
+    width: 100%;
+    max-width: 490px;
+    height: auto;
+  }
+
+  .home {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 860px) {
+  .home {
+    grid-template-columns: 1fr;
+    height: 118vh;
+  }
+
+  .home-text {
+    padding-top: 60px;
+  }
+
+  .home-img {
+    text-align: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .home {
+    height: 110vh;
+    gap: 0.1rem;
+  }
 }

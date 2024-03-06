@@ -22,3 +22,21 @@
   line-height: 30px;
   margin-bottom: 3rem;
 }
+
+@media (max-width: 1045px) {
+  .about-img {
+    width: 100%;
+    max-width: 490px;
+    height: auto;
+  }
+}
+
+@media (max-width: 860px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img {
+    text-align: center;
+  }
+}

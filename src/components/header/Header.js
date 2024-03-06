@@ -1,8 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { useEffect } from "react";
 import hero from "../../images/hero.png";
 import "./header.css";
 
-function Header() {
+function Header({ sr }) {
+  useEffect(() => {
+    sr.reveal(".home-text", { delay: 300 });
+    sr.reveal(".home-img", { delay: 400 });
+  }, [sr]);
+
   return (
     <section className="home" id="home">
       <div className="home-text">

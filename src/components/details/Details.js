@@ -1,10 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { useEffect } from "react";
 import img1 from "../../images/c1.png";
 import img2 from "../../images/c2.png";
 import img3 from "../../images/c3.png";
 import "./details.css";
 
-function Details() {
+function Details({ sr }) {
+  useEffect(() => {
+    sr.reveal(".container", { delay: 400 });
+  }, [sr]);
+
   return (
     <section className="container">
       <div className="container-box">
