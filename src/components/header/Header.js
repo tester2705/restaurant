@@ -16,10 +16,10 @@ function Header({ sr }) {
         <h1>
           Meet, <span>Eat &</span> <p> Enjoy The True </p> Taste
         </h1>
-        <a href="#" className="btn">
+        <a href="#shop" className="btn">
           Explore Menu<i className="bx bxs-right-arrow"></i>
         </a>
-        <Link to='/book-a-table' className="btn2">
+        <Link to={`/book-a-table`} className="btn2">
           Book a Table
         </Link>
       </div>

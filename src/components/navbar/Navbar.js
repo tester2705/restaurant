@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useEffect, useState } from "react";
-import "./navbar.css";
 import { Link } from "react-router-dom";
+import "./navbar.css";
 
 function Navbar() {
   const [stickyClass, setStickyClass] = useState("");
   const [navBarOpen, setNavBarOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", stickNavbar);
@@ -29,11 +30,15 @@ function Navbar() {
     };
   }
 
+  function handleSearch() {
+    setSearchOpen((prev) => !prev);
+  }
+
   return (
     <header className={stickyClass}>
-      <Link to='/' className="logo">
+      <Link to="/" className="logo">
         <i className="bx bxs-home"></i>
-        <h3>&nbsp;Restaurant</h3>
+        {!searchOpen && <h3>&nbsp;Restaurant</h3>}
       </Link>
 
       <ul className={`navlist ${navBarOpen ? "open" : ""}`}>
@@ -57,7 +62,18 @@ function Navbar() {
       </ul>
 
       <div className="nav-icons">
-        <i className="bx bx-search"></i>
+        <div className="search-container">
+          {searchOpen && (
+            <input
+              type="text"
+              className="open search-input"
+              placeholder="Search Here..."
+            />
+          )}
+          <button id="search-btn" onClick={handleSearch}>
+            <i className="bx bx-search"></i>
+          </button>
+        </div>
         <i className="bx bx-cart"></i>
         <div id="menu-icon" onClick={handleClick}>
           <i className="bx bx-menu"></i>
