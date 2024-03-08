@@ -132,4 +132,8 @@ header.sticky {
   :root {
     --font-big: 2.8rem;
   }
+
+  .btn {
+    padding: 15px 20px;
+  }
 }

@@ -118,7 +118,6 @@ button {
   cursor: pointer;
 }
 
-
 @media (max-width: 1545px) {
   header {
     padding: 22px 4%;
@@ -162,10 +161,10 @@ button {
 
 @media (max-width: 860px) {
   .logo {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .search-input.open {
-    width: 200px;
+    width: 170px;
   }
 }
